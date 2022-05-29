@@ -1,0 +1,637 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header og navbar*/
+header{
+    background-color:#a0a177;
+
+    padding: 2%;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+/*logo*/
+header > a {
+    font-family: 'Antic Didone', serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*placering af menupunkterne*/
+
+nav{
+    display: flex;
+    gap: 50px;
+}
+
+/*styling af de punkter der ikke har en dropdown*/
+
+nav > a {
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 16px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav > a:hover{
+    font-weight: 800;
+}
+
+/* dropdown styling i navbaren */
+.dropbtn {
+    background-color: transparent;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+  }
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: #a0a177;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 10pt;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.075);
+   
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* skifter baggrundfarven og font weight når man kører over */
+  .dropdown-content a:hover {
+    background-color: #a0a177;
+    font-weight: 800;
+  }
+/* display ændres til blok, for at vise content når man hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+#burgermenubody{
+    background-color: #a0a177;
+    color: black;
+}
+
+#burgermenu{
+    display:flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items:center;
+    padding: 20%;
+}
+#burgermenulogo{
+   
+    color: black;
+    background-color: #a0a177;
+    text-decoration: none;
+}
+
+
+#burgermenuexit > img{
+    width: 40px;
+    height: 40px;
+    padding: 6%;
+}
+
+#mobilemenu{
+    width: 50px;
+    height: 50px;
+}
+
+
+/*forside*/
+
+/*hero*/
+#forside{
+    width: 100%;
+   
+    background-image: url("image/lyserodtarm.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+#forsidetekst {
+    font-family: 'Antic Didone', serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10%;
+    
+}
+
+#forside > p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style:normal;
+    line-height: 60px;
+    padding-bottom:30px;
+    text-align: center;
+}
+
+
+.lyserodknap{
+    background-color:#947169 ;
+    border: none;
+    color:#f7f8f6;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.lyserodknap:hover{
+    font-weight: 600;
+}
+
+
+
+
+/*section - behandlinger jeg tilbyder*/
+
+.behandlinger > h2{
+   text-align: center;
+   font-family: 'Antic Didone', serif;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-top: 5%;
+    margin-bottom: 15px;
+   
+}
+.behandlinger > p{
+    font-family: 'Montserrat', sans-serif;
+}
+.behandlingerbilleder {
+    display: flex;
+    width:100%;
+    display:flex;
+    justify-content:space-around;  
+}
+
+.behandlingerbilleder > div>h2{
+    font-family: 'Antic Didone', serif;
+    font-size: 20px;
+    
+    text-align: center;
+    
+}
+#behandlingerknap{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* section Hvem er jeg - forside*/
+
+.tokolonnermette{
+    display: flex;
+}
+
+#metteprisertekst{
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+#metteprisertekst > h2{
+    font-family: 'Antic Didone', serif;
+    text-transform: uppercase;
+    margin-top:100px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+#metteprisertekst > p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top:100px;
+    margin-bottom: 100px;
+    
+}
+#prisertekst{
+    align-items: center;
+    text-align: center; 
+    
+}
+
+
+#prisertekst > h2{
+    font-family: 'Antic Didone', serif;
+    text-transform: uppercase;
+    margin-top:100px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+#prisertekst > p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top:100px;
+    margin-bottom: 100px;
+    
+}
+
+#metteansigt{
+    width: 100%;
+}
+/* section priser og tilskud - forside*/
+.tokolonnerpriser {
+    display: flex;
+}
+
+#priserforside{
+    width: 100%;
+   
+}
+
+
+
+
+/*Om mig*/
+
+#ommigintro{
+    background-image: url(image/ommigbaggrund.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tokolonnerommig{
+    display:flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+#ommigbillede {
+    width: 100%;
+}
+#ommigtekst >div>p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+#ommigtekst>div> h2{
+    font-family: 'Antic Didone', serif;
+    text-transform: uppercase;
+    margin-bottom: 50px; 
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*priser og tilskud side*/
+
+.pogtkasse{
+    display: flex;
+}
+.pogt{
+    width: 50%;
+}
+#tilskud >div>p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+
+/*kom godt i gang side*/
+
+#komgodtigang {
+    font-family: 'Antic Didone', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: xx-large;
+    background-image: url(image/lyserodtarm.jpg);
+    width: 100%;
+    height: 500px;
+}
+
+#komgodtigang> h2{
+    padding: 15% 15%;
+}
+
+#komigangtekst > div>h2{
+    font-family: 'Antic Didone', serif;
+    text-transform: uppercase;
+    margin-top:100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#komigangtekst > div> p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    text-align: center;
+    line-height: 30px;
+}
+#madplan{
+    width: 100%;
+    
+}
+
+/*Diæt*/
+
+#diætoverskrift{
+    background-image: url(image/diætbillede.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#diætoverskrift> h2{
+    padding: 15% 15%;
+    font-size:300%;
+    font-weight: 600;
+    font-family: 'Antic Didone', serif;
+}
+
+#diættekst > h2{
+    font-family: 'Antic Didone', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+#diættekst > p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10%;
+}
+#diættekst2 > div>h2{
+    font-family: 'Antic Didone', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+#diættekst2 > div>p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10%;
+}
+#grøntsager{
+    width: 100%;
+}
+
+
+
+
+
+/*Behandling af tyktarm side*/
+
+#behandlingoverskrift{
+    background-image: url(image/behandlingaftyktarm.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#behandlingoverskrift> h2{
+    padding: 15% 15%;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'Antic Didone', serif;
+    
+}
+
+.behandlingtekst> div> h2{
+    font-family: 'Antic Didone', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.behandlingtekst>h2{
+    font-family: 'Antic Didone', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.behandlingtekst>p{
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+.behandlingtekst > div>p{
+    line-height: 30px;
+    margin-bottom: 5%;
+    font-family: 'Montserrat', sans-serif;
+   
+    text-align: center;
+
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 15px;
+    padding-top:50px;
+    min-height:300px;
+    width:100%;
+
+    background-color:#a0a177;
+    text-align:left;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items:stretch;
+}
+
+footer > div > a > img{
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+footer>div>h6{
+    color: black;
+    font-weight: 600;
+}
+
+/* tekst dekoration på footer */
+h6{
+    font-family: 'Antic Didone', serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10pt;
+    text-transform: uppercase;
+    color: #f7f8f6;
+}
+
+footer > div > p{
+    margin-top:20px;
+    margin-bottom:20px;
+    color: #f7f8f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+footer > div > p > a{
+    text-decoration: none;
+    color: #f7f8f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer > div > p > a:hover{
+    font-weight: 300;
+}
+
+
+
+
+/*Media - responsive*/
+
+@media only screen and (min-width:768px){
+    /* header */
+   #mobilemenu{
+       display: none;
+   }
+   
+
+}
+@media only screen and (max-width:768px){
+
+    /* header */
+    #desktopmenu{
+        display: none;
+    }
+    /*forside*/
+    #forside{
+        width: 100%;
+        height: 500px;
+        align-items: center;
+    }
+    #forsidetekst, p{
+        text-align: center;
+        
+        
+    }
+    /*forside-behandlinger*/
+    .behandlinger{
+        flex-direction: column;
+       
+    }
+    .behandlingerbilleder {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Forside - Mette*/
+
+    .tokolonnermette{
+        flex-direction: column-reverse;
+    }
+    /*forside - priser*/
+    .tokolonnerpriser{
+        flex-direction: column;
+    }
+     /* footer */
+     footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*priser og tilskud side*/
+    .priserogtilskud{
+        flex-direction: column;
+    }
+    /*diæt side*/
+    #diætoverskrift{
+        height: 250px;
+    }
+    /*kom godt i gang side*/
+    #komgodtigang{
+        height: 250px;
+    }
+    /*Behandliong af tyktarm side*/
+    #behandlingoverskrift{
+        height: 250px;
+    }
+    /*om mig side*/
+    #ommigintro{
+        height: 250px;
+    }
+    
+
+    .tokolonnerommig{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
